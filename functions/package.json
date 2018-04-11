@@ -1,0 +1,23 @@
+{
+  "name": "jira-assistant",
+  "description": "Dialogflow fulfillment to interact with Jira by voice.",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Tim Vergenz <vergenzt@gmail.com>",
+  "main": "index.js",
+  "engines": {
+    "node": "~8.0"
+  },
+  "scripts": {
+    "start": "firebase serve --only functions:dialogflowFirebaseFulfillment",
+    "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment"
+  },
+  "dependencies": {
+    "dialogflow-fulfillment": "0.3.0-beta.1",
+    "firebase-admin": "^5.12.0",
+    "firebase-functions": "^1.0.1",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {}
+}
